@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Attendance Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Student Attendance Management</h1>
+
+  <!-- Form to Add or Edit Student -->
+  <form id="studentForm">
+    <input type="text" id="name" placeholder="Enter Name" required>
+    <input type="number" id="rollNo" placeholder="Enter Roll No" required>
+    <button type="submit">Add Student</button>
+    <button type="button" id="updateBtn" style="display:none;">Update Student</button>
+  </form>
+
+  <!-- Form to Mark Attendance -->
+  <form id="attendanceForm">
+    <br>
+    <select id="studentSelect" required>
+      <option value="">Select Student</option>
+    </select>
+
+    <input type="date" id="attendanceDate" required>
+    <select id="attendanceStatus" required>
+      <option value="Present">Present</option>
+      <option value="Absent">Absent</option>
+      <option value="Half Day">Half Day</option>
+      <option value="Not Updated">Not Updated</option>
+    </select>
+    <button type="submit">Mark Attendance</button>
+  </form>
+
+  <!-- Table to Show Students and Attendance -->
+  <h2>Student Attendance Report</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Roll No</th>
+        <th>Name</th>
+        <th>Attendance History</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="studentTableBody"></tbody>
+  </table>
+
+  <!-- Reference to external JavaScript file -->
+  <script src="server.js"></script>
+</body>
+</html>

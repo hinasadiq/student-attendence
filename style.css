@@ -1,0 +1,33 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    margin: 20px 0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  button {
+    margin-left: 10px;
+  }
+  
+  #studentForm input, #attendanceForm select, #attendanceForm input {
+    margin-right: 10px;
+  }
+  
